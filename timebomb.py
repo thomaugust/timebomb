@@ -10,7 +10,7 @@ def main():
     print "Guess a number between zero and a hundred"
     randNo = random.randint(0,100)
     def choice():
-        guess = raw_input('> ')
+        guess = input('> ')
         if guess > randNo:
             print "You guessed too high."
             sleep(0.5)
