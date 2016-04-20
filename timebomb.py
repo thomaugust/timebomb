@@ -12,11 +12,11 @@ def main():
     def choice():
         guess = raw_input('> ')
         if guess > randNo:
-            "You guessed too high."
+            print "You guessed too high."
             sleep(0.5)
             choice()
         if guess < randNo:
-            "You guessed too low."
+            print "You guessed too low."
             sleep(0.5)
             choice()
         if guess == randNo:
@@ -24,7 +24,7 @@ def main():
             print "Shutdown cancelled."
             sleep(1)
             exit()
-            
+
     choice()
 
 main()
