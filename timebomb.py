@@ -3,9 +3,9 @@ def main():
     from time import sleep
     import random
 
-    subprocess.call(["shutdown","-s", "-f", "-t", "60"])
+    subprocess.call(["shutdown","-s", "-f", "-t", 10])
 
-    print "You have 60 seconds until your computer shuts down"
+    print "You have 10 seconds until your computer shuts down"
     sleep(0.5)
     print "Guess a number between zero and a hundred"
     randNo = random.randint(0,100)
