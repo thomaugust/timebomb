@@ -3,7 +3,7 @@ def main():
     from time import sleep
     import random
 
-    subprocess.call(["shutdown","-s", "-f", "-t", 10])
+    subprocess.call(["shutdown","-s", "-f", "-t", "30"])
 
     print "You have 10 seconds until your computer shuts down"
     sleep(0.5)
