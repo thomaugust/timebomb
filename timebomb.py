@@ -24,5 +24,7 @@ def main():
             print "Shutdown cancelled."
             sleep(1)
             exit()
+            
+    choice()
 
 main()
