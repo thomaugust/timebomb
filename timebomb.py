@@ -75,7 +75,7 @@ def main():
         print 'To the nearest ten, how many lines of code is this program?'
         def choice():
             guess = input('> ')
-            if guess == 100:
+            if guess == 90:
                 print 'Correct!'
                 subprocess.call(["shutdown", "-a"])
                 sleep(1)
@@ -84,7 +84,7 @@ def main():
                 print 'Wrong!'
                 subprocess.call(["shutdown", "-a"])
                 sleep(3)
-                shubprocess.call(["shutdown", "-s", "-f", "-t", "0"])
+                subprocess.call(["shutdown", "-s", "-f", "-t", "0"])
                 exit()
         choice()
 
