@@ -71,7 +71,7 @@ def main():
     def q4():
         print 'Final Question!'
         subprocess.call(["shutdown","-s", "-f", "-t", "30"])
-        print 'You have one chance to get this right, or else the program will delete itself'
+        print 'You have one chance to get this right, or else.'
         print 'To the nearest ten, how many lines of code is this program?'
         def choice():
             guess = input('> ')
@@ -82,11 +82,9 @@ def main():
                 exit()
             else:
                 print 'Wrong!'
-                sleep(1)
-                print 'Prepare to redownload this from github. lol.'
+                subprocess.call(["shutdown", "-a"])
                 sleep(3)
-                subprocess.call(["cd"," ",".."])
-                subprocess.call(["rmdir"," ","timebomb-master"])
+                shubprocess.call(["shutdown", "-s", "-f", "-t", "0"])
                 exit()
         choice()
 
